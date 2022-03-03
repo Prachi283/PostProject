@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PostPage</title>
+</head>
+<body>
+<h1> WelCome</h1>
+<h2> Posts :==> </h2>
+<ul>
+	{% for post in object_list %}
+	<li>{{post.text}}</li>
+	{% endfor %}
+</ul>
+</body>
+</html>
